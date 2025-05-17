@@ -19,12 +19,12 @@ const Index = () => {
       >
         <div className="flex mb-8 gap-4">
           <Link to="/industries">
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-elecon-blue">
+            <Button variant="outline" className="border-white hover:bg-white text-elecon-blue">
               Elecon Industries
             </Button>
           </Link>
           <Link to="/aerotech">
-            <Button variant="outline" className="border-white text-white hover:bg-white hover:text-elecon-blue">
+            <Button variant="outline" className="border-white hover:bg-white text-elecon-blue">
               Elecon Aerotech
             </Button>
           </Link>
@@ -40,7 +40,7 @@ const Index = () => {
               Elecon Group comprises two specialized divisions, each excelling in their respective industries.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-12">
             {/* Elecon Industries */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md animate-fade-in">
@@ -61,7 +61,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            
+
             {/* Elecon Aerotech */}
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="h-64 bg-elecon-blue">
@@ -84,7 +84,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Why Choose Us */}
       <section className="section-padding bg-elecon-lightgray">
         <div className="container-custom">
@@ -94,20 +94,20 @@ const Index = () => {
               We combine technical expertise, quality craftsmanship, and innovative solutions to meet your specific needs.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             <ServiceCard
               title="Technical Excellence"
               description="Our team of experienced engineers and technicians ensures the highest standards of precision and quality in every project."
               icon={<Wrench size={40} />}
             />
-            
+
             <ServiceCard
               title="Innovation"
               description="We continuously invest in the latest technologies and processes to deliver cutting-edge solutions to our clients."
               icon={<Microchip size={40} />}
             />
-            
+
             <ServiceCard
               title="Customer Focus"
               description="We work closely with our clients to understand their unique requirements and deliver tailored solutions that exceed expectations."
@@ -116,7 +116,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-16 bg-elecon-blue text-white">
         <div className="container-custom text-center">
