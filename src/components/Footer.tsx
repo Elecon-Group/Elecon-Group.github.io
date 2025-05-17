@@ -51,7 +51,7 @@ const Footer = () => {
               <p className="mb-2">Mouli - Ambala Road, Barwala, Haryana</p>
               <p className="mb-2">Tehsil - Barwala, VPO. Mouli</p>
               <p className="mb-2">Email: manish@elecongroup.in</p>
-              <p>Phone: (Please insert if available)</p>
+              <p>Phone: +91 85808 25850</p>
             </address>
           </div>
 
