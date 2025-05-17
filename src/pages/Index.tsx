@@ -13,7 +13,7 @@ const Index = () => {
       <Hero
         title="Welcome to Elecon Group"
         subtitle="A leading provider of precision plastic injection molding and advanced drone technologies."
-        imageSrc="https://images.unsplash.com/photo-1518770660439-4636190af475"
+        imageSrc="/homepagecover.png"
         ctaLink="/contact"
         ctaText="Get in Touch"
       >
