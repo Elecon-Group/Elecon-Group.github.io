@@ -1,0 +1,95 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+
+const Footer = () => {
+  return (
+    <footer className="bg-[#232223] text-white py-10 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-10 md:gap-0">
+        {/* Left: Logo and Contact */}
+        <div className="flex flex-col gap-6 min-w-[250px]">
+          <div className="flex items-center gap-2">
+            {/* Logo SVG */}
+            <svg
+              width="143"
+              height="42"
+              viewBox="0 0 143 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_870)">
+                <g clip-path="url(#clip1_1_870)">
+                  <path
+                    d="M4.20424 0.81616C4.20424 1.01807 5.7807 3.43697 7.70727 6.19305L11.2113 11.2338L23.4729 11.1999C30.2343 11.1671 35.7345 11.0657 35.7345 10.9652C35.7345 10.8309 34.1232 8.44485 32.1967 5.62214L28.623 0.47998H16.431C8.30304 0.47998 4.20424 0.580437 4.20424 0.81616ZM59.8211 8.74921C59.6112 9.16098 59.6112 14.4444 59.6818 20.414L59.8917 31.3926L62.5513 31.5985L65.1413 31.8044L65.002 19.9336L64.7922 8.06292L62.4121 7.99429C61.1519 7.99429 59.9613 8.33744 59.8211 8.74921ZM42.2502 8.88646C41.55 9.09235 41.3402 12.111 41.3402 20.4827V31.8044L49.2503 31.5985L57.0909 31.3926V29.3337C57.0909 27.07 57.2311 27.1386 50.6507 27.0014L46.9408 26.9327V22.1298H56.0416V18.0121H46.9408V13.2091H57.5116L57.3017 10.9443L57.0909 8.74921L50.0908 8.68058C46.2406 8.61195 42.67 8.68058 42.2502 8.88646ZM72.4925 15.5424C66.8918 17.9434 65.9817 25.972 70.8126 29.9514C74.6627 33.1769 81.453 31.873 83.6928 27.619L84.8128 25.5602H82.2228C80.7528 25.5602 79.0728 26.0406 78.3726 26.6582C76.9026 27.9612 73.8919 27.4818 73.2623 25.9033C72.9818 25.0112 73.8223 24.8739 78.7924 24.8739C84.7431 24.8739 84.7431 24.8739 84.7431 23.0896C84.7431 20.1395 82.7131 16.8454 80.1928 15.6797C77.3929 14.3757 75.2923 14.3071 72.4925 15.5424ZM79.0022 20.5513C79.1425 21.169 78.303 21.4435 75.9925 21.4435C73.0524 21.4435 72.772 21.3062 73.5418 20.3454C74.5921 19.1101 78.5129 19.316 79.0022 20.5513ZM91.1833 15.7483C85.7935 18.3552 85.0226 26.1092 89.7132 29.9514C92.7936 32.5593 97.9039 32.4907 100.774 29.8141C101.894 28.7847 103.014 27.2759 103.294 26.3837C103.714 25.0112 103.505 24.8739 101.264 24.8739C99.6534 24.8739 98.254 25.3543 97.2733 26.3151C95.5238 28.0298 93.8439 27.7563 92.5131 25.4916C90.3428 21.718 94.1234 17.5317 97.2733 20.3454C98.3942 21.3748 103.644 21.9239 103.644 21.1003C103.644 20.8258 103.154 19.7964 102.594 18.6983C100.563 14.8561 95.5934 13.5522 91.1833 15.7483ZM110.924 15.1993C110.155 15.5424 108.615 16.8454 107.565 18.0807C105.814 20.0709 105.604 20.7572 105.885 24.119C106.164 27.2759 106.584 28.1671 108.544 29.8828C110.645 31.6671 111.205 31.873 114.634 31.5985C119.885 31.1867 121.985 29.1279 122.405 23.9817C122.686 20.4827 122.545 20.0709 120.375 17.6689C117.855 14.9934 113.864 13.964 110.924 15.1993ZM116.665 21.1003C118.065 23.1582 117.505 25.9033 115.544 26.9327C112.394 28.5788 109.524 24.2562 111.694 21.0317C113.095 18.9042 115.195 18.9042 116.665 21.1003ZM131.785 15.6797C130.946 16.2287 130.246 16.366 130.246 16.0228C130.246 15.6111 129.126 15.2679 127.796 15.2679H125.345V31.7357H130.246V27.07C130.246 22.1298 131.435 19.3846 133.676 19.3846C135.916 19.3846 136.546 20.8944 136.546 26.4524V31.8044L139.206 31.5985L141.796 31.3926V25.0112C141.796 18.6297 141.727 18.5611 139.487 16.5709C136.966 14.3071 134.166 14.0326 131.785 15.6797ZM0 28.541V41.48H17.8673C27.712 41.48 35.7345 41.4123 35.7345 41.3119C35.7345 41.2114 34.158 38.8582 32.2315 36.1031L28.7284 31.0614H10.8602V26.3569H18.0423C22.0019 26.3569 25.2244 26.2564 25.1896 26.0883C25.1896 25.954 23.5783 23.568 21.616 20.8119L18.0075 15.7712L9.00425 15.6697L0 15.5693V28.541Z"
+                    fill="white"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_1_870">
+                  <rect
+                    width="143"
+                    height="41"
+                    fill="white"
+                    transform="translate(0 0.47998)"
+                  />
+                </clipPath>
+                <clipPath id="clip1_1_870">
+                  <rect
+                    width="141.796"
+                    height="41"
+                    fill="white"
+                    transform="translate(0 0.47998)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div>
+            <div className="text-lg font-medium mb-1">Contact</div>
+            <a
+              href="mailto:manish@elecongroup.in"
+              className="text-[#1da1f2] hover:underline block"
+            >
+              manish@elecongroup.in
+            </a>
+            <div className="text-sm mt-1">+91-85808-25850</div>
+          </div>
+        </div>
+        {/* Center: Address */}
+        <div className="min-w-[250px]">
+          <div className="text-lg font-medium mb-1">Address</div>
+          <div className="text-sm leading-relaxed">
+            Khasra No. 89, VPO Mouli, Barwala, Panchkula,
+            <br />
+            Haryana
+          </div>
+        </div>
+        {/* Right: Navigation */}
+        <div className="flex flex-col items-start md:items-end min-w-[250px] w-full md:w-auto">
+          <nav className="flex flex-row gap-4 text-sm md:text-base">
+            <NavLink to="/" className="text-white relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">
+              Home
+            </NavLink>
+            <NavLink to="/contact" className="text-white relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">
+              Contact
+            </NavLink>
+            <NavLink to="/elecon-aerotech" className="text-white relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">
+              Elecon Aerotech
+            </NavLink>
+            <NavLink to="/about" className="text-white relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-white hover:after:w-full after:transition-all after:duration-300">
+              About Us
+            </NavLink>
+          </nav>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto mt-10 border-t border-[#333] pt-4 text-xs text-[#b0b0b0] flex flex-col md:flex-row justify-between items-center">
+        <span>
+          {new Date().getFullYear()} Elecon Industries. All rights reserved. Designed for performance.
+          Built to scale.
+        </span>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
